@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ThemeButton">
+
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/theme_button_bg_green_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_large_16</item>
+    </style>
+
+    <!-- 导航栏按钮 -->
+    <style name="GuideButton" parent="ThemeButton">
+
+        <item name="android:drawablePadding">30dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@drawable/guide_btn_bg_selector</item>
+        <item name="android:textColor">@drawable/guide_btn_text_selector</item>
+    </style>
+
+    <style name="TableButton">
+        <item name="android:background">@drawable/tab_bg_selector</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">@color/default_divider</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+</resources>

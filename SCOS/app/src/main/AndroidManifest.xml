@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.source.code.activity">
+
+    <permission
+        android:name="scos.permission.ACCESSSCOS"
+        android:protectionLevel="dangerous" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver
+            android:name="es.source.code.br.DeviceStartedListener"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="es.source.code.service.ServerObserverService"></service>
+        <service android:name="es.source.code.service.UpdateService"></service>
+        <activity android:name="es.source.code.activity.SCOSEntry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainScreen"
+            android:permission="scos.permission.ACCESSSCOS"
+            android:launchMode="singleTop"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="scos.intent.action.SCOSMAIN" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="scos.intent.category.SCOSLAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginOrRegister"
+            android:permission="scos.permission.ACCESSSCOS">
+
+        </activity>
+
+        <activity android:name=".FoodView"
+            android:permission="scos.permission.ACCESSSCOS">
+
+        </activity>
+        <activity android:name=".FoodOrderView"
+            android:permission="scos.permission.ACCESSSCOS">
+
+        </activity>
+        <activity android:name=".SCOSHelper"
+            android:permission="scos.permission.ACCESSSCOS"
+            android:exported="true">
+        </activity>
+        <activity android:name=".FoodDetailed"
+            android:permission="scos.permission.ACCESSACOS"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

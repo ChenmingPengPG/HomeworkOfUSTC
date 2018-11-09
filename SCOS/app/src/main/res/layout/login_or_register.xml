@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/usernum_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="@string/cue1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usernum_text"
+        android:hint="@string/cue2"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/password_text"
+        android:max="100"
+        android:progress="0" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_progress"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_login"
+            style="@android:style/Widget.Button"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/login"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_back"
+            style="@android:style/Widget.Button"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/back"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_register"
+            style="@android:style/Widget.Button"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/register"
+            android:visibility="visible" />
+    </TableRow>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SCOS</string>
+    <string name="order">点菜</string>
+    <string name="look">查看订单</string>
+    <string name="log_reg">登录/注册</string>
+    <string name="sys_help">系统帮助</string>
+    <string name="my_permission">scos.permission.ACCESSSCOS</string>
+    <string name="login">登录</string>
+    <string name="back">返回</string>
+    <string name="cue1">请输入账号</string>
+    <string name="cue2">请输入密码</string>
+    <string name="register">注册</string>
+</resources>

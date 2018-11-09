@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/order_item"
+        android:title="@string/order"/>
+    <item
+        android:id="@+id/look_item"
+        android:title="@string/look"/>
+    <item
+        android:id="@+id/log_item"
+        android:title="@string/log_reg"/>
+    <item
+        android:id="@+id/help_item"
+        android:title="@string/sys_help"/>
+
+</menu>

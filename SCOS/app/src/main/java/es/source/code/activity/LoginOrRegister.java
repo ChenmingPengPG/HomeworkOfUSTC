@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -15,6 +16,16 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Timer;
@@ -32,10 +43,59 @@ public class LoginOrRegister extends AppCompatActivity implements View.OnClickLi
     private ProgressBar progressBar;
     private EditText user_text, pass_text;
     private SharedPreferences myPreference;
-    private Thread thread;
     private User user;
     private int progress = 0;
-    Timer timer = new Timer();
+    Intent intent;
+    final String data_back = "return";
+    final String data_suc = "LoginSuccess";
+    final String data_suc_reg = "RegisterSuccess";
+    String inputText;
+    String passText;
+    SharedPreferences.Editor editor;
+    public class MyThread extends Thread {
+        int info;
+        public MyThread(int info){
+            super();
+            this.info = info;
+        }
+        @Override
+        public void run() {
+            buttonLog.getTag();
+            while(progress <= 100){
+                progress += 10;
+                EventBus.getDefault().post(new updateProgress(progress));
+                try{
+                    Thread.sleep(200);
+                }catch(InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+            if(!isOK(inputText)){
+                user_text.setError("输入内容不符合规则");
+            }
+            if(!isOK(passText)){
+                pass_text.setError("输入内容不符合规则");
+            }
+            if(isOK(inputText)&&isOK(passText)){
+                //更新user并存储到sp中
+                user.setUserName(inputText);
+                user.setPassword(passText);
+                user.setOldUser(true);
+                Gson gson = new Gson();
+                String userIfo = gson.toJson(user);
+                editor.putString("userIfo",userIfo);
+                editor.putInt("state", info);
+                editor.apply();
+                  /*  intent.putExtra("From Login", data_suc);
+                    intent.putExtra("loginUser", user);*/
+                startActivity(intent);
+            }else{
+                progressBar.setVisibility(GONE);
+                progressBar.setProgress(0);
+            }
+        }
+    };
+    /*Timer timer = new Timer();
     TimerTask task = new TimerTask() {
         @Override
         public void run() {
@@ -63,7 +123,7 @@ public class LoginOrRegister extends AppCompatActivity implements View.OnClickLi
                   break;
           }
       }
-    };
+    };*/
     //Java 中，非静态的内部类和匿名类都会隐式地持有一份对外部类的引用，而静态的内部类则不会包含对外部类的引用。
     /*也就是说，错误提示中的匿名 Handler 包含着对外部类(Activity 类)的引用。如果你给这个 Handler 发一个延迟执行的
      Message，Message 会被添加进主线程 Looper 的 MessageQueue 中，且 Message 持有对 Handler 的引用。
@@ -77,7 +137,6 @@ public class LoginOrRegister extends AppCompatActivity implements View.OnClickLi
     protected void  onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_or_register);
-
         //读取myPreference中保存的user数据
         myPreference = getSharedPreferences("myPreference", Context.MODE_PRIVATE);
 
@@ -101,24 +160,37 @@ public class LoginOrRegister extends AppCompatActivity implements View.OnClickLi
             buttonReg.setVisibility(GONE);
             user_text.setText(user.getUserName());
         }
-
         buttonLog.setOnClickListener(this);
+        intent = new Intent(LoginOrRegister.this, MainScreen.class);
+        EventBus.getDefault().register(this);
     }
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEventMainThread(updateProgress event){
+        progressBar.setProgress(event.getMsg());
+    }
+    public class updateProgress {
+        private int mMsg;
+        public updateProgress(int msg) {
+            mMsg = msg;
+        }
+        public int getMsg(){
+            return mMsg;
+        }
+    }
     @Override
     public void onClick(View v){
-        Intent intent = new Intent(LoginOrRegister.this, MainScreen.class);
-        String data_back = "return";
-        String data_suc = "LoginSuccess";
-        String data_suc_reg = "RegisterSuccess";
-        String inputText = user_text.getText().toString();//读取账号密码
-        String passText = pass_text.getText().toString();
-        SharedPreferences.Editor editor = myPreference.edit();
+        inputText = user_text.getText().toString();//读取账号密码
+        passText = pass_text.getText().toString();
+        editor = myPreference.edit();
         switch(v.getId()){
             case R.id.button_login:
                 progressBar.setVisibility(View.VISIBLE);
                 progressBar.setProgress(0);
-                timer.schedule(task,0,200);
+                MyThread updateProgressThread = new MyThread(1);//1表示已登录
+                updateProgressThread.start();
+                SendDataByPost();
+               /* timer.schedule(task,0,200);*/
                 /*for(int i = 0; i < 10; i++) { //会阻塞主线程，progress到100后才会进行更新
                     //应该考虑用线程发送消息来实现更新（handler）
                     try {
@@ -129,34 +201,7 @@ public class LoginOrRegister extends AppCompatActivity implements View.OnClickLi
                     }
                     progressBar.setProgress(progressBar.getProgress() + 10);
                 }*/
-                if(!isOK(inputText)){
-                    user_text.setError("输入内容不符合规则");
-                }
-                if(!isOK(passText)){
-                    pass_text.setError("输入内容不符合规则");
-                }
-                if(isOK(inputText)&&isOK(passText)){
-                    //更新user并存储到sp中
-                    user.setUserName(inputText);
-                    user.setPassword(passText);
-                    user.setOldUser(true);
-                    Gson gson = new Gson();
-                    String userIfo = gson.toJson(user);
-                    editor.putString("userIfo",userIfo);
-                    editor.putInt("state", 1);
-                    editor.apply();
-
-
-                  /*  intent.putExtra("From Login", data_suc);
-                    intent.putExtra("loginUser", user);*/
-                    startActivity(intent);
-                }else{
-                    progressBar.setProgress(0);
-                    progressBar.setVisibility(GONE);
-                }
                 break;
-
-
             case R.id.button_back:
                 editor.putInt("state", 0);
                 editor.apply();
@@ -164,26 +209,12 @@ public class LoginOrRegister extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent);
                 break;
             case R.id.button_register:
-                if(!isOK(inputText)){
-                    user_text.setError("输入内容不符合规则");
-                }
-                if(!isOK(passText)){
-                    pass_text.setError("输入内容不符合规则");
-                }
-                if(isOK(inputText)&&isOK(passText)){
-                    user.setUserName(inputText);
-                    user.setPassword(passText);
-                    user.setOldUser(true);
-                    Gson gson = new Gson();
-                    String userIfo = gson.toJson(user);
-                    editor.putString("userIfo",userIfo);
-                    editor.putInt("state", 1);
-                    editor.apply();
-
-                    /*intent.putExtra("From Login",data_suc_reg);
-                    intent.putExtra("loginUser", user);*/
-                    startActivity(intent);
-                }
+                progressBar.setVisibility(View.VISIBLE);
+                progressBar.setProgress(0);
+                MyThread updateProgressThread_1 = new MyThread(1);
+                updateProgressThread_1.start();
+                SendDataByPost();
+                break;
         }
     }
 
@@ -195,5 +226,88 @@ public class LoginOrRegister extends AppCompatActivity implements View.OnClickLi
         }
         return true;
     }
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
+
+    public String SendDataByPost(){
+        URL url = null ;//"http://localhost:8080/SCOSServer/Servers";
+        String result="";//要返回的结果
+        try {
+            url=new URL("http://localhost:8080/SCOSServer/Servers"+"?userName="+user.getUserName()
+            +"&passWord="+user.getPassword());
+            HttpURLConnection httpURLConnection= (HttpURLConnection) url.openConnection();
+
+            httpURLConnection.setConnectTimeout(2000);//设置连接超时时间，单位ms
+            httpURLConnection.setReadTimeout(2000);//设置读取超时时间，单位ms
+
+            //设置是否向httpURLConnection输出，因为post请求参数要放在http正文内，所以要设置为true
+            httpURLConnection.setDoOutput(true);
+
+            //设置是否从httpURLConnection读入，默认是false
+            httpURLConnection.setDoInput(true);
+
+            //POST请求不能用缓存，设置为false
+            httpURLConnection.setUseCaches(false);
+
+            //传送的内容是可序列化的
+            //如果不设置此项，传送序列化对象时，当WEB服务默认的不是这种类型时，会抛出java.io.EOFException错误
+            httpURLConnection.setRequestProperty("Content-type","application/String");
+
+            //设置请求方法是POST
+            httpURLConnection.setRequestMethod("POST");
+
+            //连接服务器
+            httpURLConnection.connect();
+
+            //getOutputStream会隐含调用connect()，所以不用写上述的httpURLConnection.connect()也行。
+            //得到httpURLConnection的输出流
+            OutputStream os= httpURLConnection.getOutputStream();
+
+            //构建输出流对象，以实现输出序列化的对象
+            ObjectOutputStream objOut=new ObjectOutputStream(os);
+
+            //dataPost类是自定义的数据交互对象，只有两个成员变量
+
+            //向对象输出流写出数据，这些数据将存到内存缓冲区中
+            objOut.writeObject(user);
+
+            //刷新对象输出流，将字节全部写入输出流中
+            objOut.flush();
+
+            //关闭流对象
+            objOut.close();
+            os.close();
+
+            //将内存缓冲区中封装好的完整的HTTP请求电文发送到服务端，并获取访问状态
+            /*if(HttpURLConnection.HTTP_OK==httpURLConnection.getResponseCode()){
+
+                //得到httpURLConnection的输入流，这里面包含服务器返回来的java对象
+                InputStream in=httpURLConnection.getInputStream();
+
+                //构建对象输入流，使用readObject()方法取出输入流中的java对象
+                ObjectInputStream inObj=new ObjectInputStream(in);
+                data= (dataPost) inObj.readObject();
+
+                //取出对象里面的数据
+                result=data.password;
+
+                //输出日志，在控制台可以看到接收到的数据
+                Log.w("HTTP",result+"  :by post");
+
+                //关闭创建的流
+                in.close();
+                inObj.close();
+            }else{
+                Log.w("HTTP","Connction failed"+httpURLConnection.getResponseCode());
+            }*/
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 
 }
+

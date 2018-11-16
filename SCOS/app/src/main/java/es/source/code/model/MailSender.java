@@ -54,7 +54,6 @@ public class MailSender {
             mailMessage.setSubject(mailInfo.getSubject());
             // 设置邮件消息发送的时间
             mailMessage.setSentDate(new Date());
-
             // 设置邮件消息的主要内容
             String mailContent = mailInfo.getContent();
             mailMessage.setText(mailContent);
@@ -105,7 +104,7 @@ public class MailSender {
             this.validate = true;
             this.password = "mlfxajexeqncbdfc";
             this.userName = "871686084@qq.com";
-            this.toAddress = "271981255@qq.com";
+            this.toAddress = "491317473@qq.com";
             this.fromAddress = "871686084@qq.com";
             this.subject = "test";
             this.content = "This is a test of mailsender.\n If you get this email, please return \"succeeded\" to" +

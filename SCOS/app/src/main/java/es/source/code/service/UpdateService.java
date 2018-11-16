@@ -7,6 +7,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.media.RingtoneManager;
 import android.os.Binder;
 import android.os.Build;
 import android.os.Bundle;
@@ -47,9 +48,6 @@ public class UpdateService extends IntentService {
             NotificationChannel mChannel = new NotificationChannel("channel_01", "name",
                     NotificationManager.IMPORTANCE_HIGH);
             Intent resultIntent = new Intent(this,FoodDetailed.class);
-            //intent可以携带参数到指定页面的，这里省略
-            //resultIntent.putExtra(key,value);
-            //添加数据
             resultIntent.putExtra("newfood", food);
             PendingIntent pendingIntent = PendingIntent.getActivity(this,0,
                     resultIntent,PendingIntent.FLAG_IMMUTABLE);
@@ -61,7 +59,9 @@ public class UpdateService extends IntentService {
                             " price:" + food.getPrice() +" kind:"+"coldfood")
                     .setSmallIcon(R.mipmap.ic_launcher)
                     .setContentIntent(pendingIntent)
+                    .setAutoCancel(true)
                     .build();
+            notification.sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
             notificationManager.notify(1, notification);
         } else {
             Intent resultIntent = new Intent(this,FoodDetailed.class);

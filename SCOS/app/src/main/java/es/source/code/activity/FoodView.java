@@ -27,6 +27,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import org.greenrobot.eventbus.EventBus;
+
 import es.source.code.fragment.*;
 
 import java.util.ArrayList;
@@ -71,9 +73,7 @@ public class FoodView extends AppCompatActivity{
         public void onServiceConnected(ComponentName name, IBinder service) {
             sMessenger = new Messenger(service);
             System.out.println("fv：connected");
-
         }
-
         @Override
         public void onServiceDisconnected(ComponentName name) {
             sMessenger = null;
@@ -167,7 +167,7 @@ public class FoodView extends AppCompatActivity{
         ab = getSupportActionBar();
         bs = new Intent(this, ServerObserverService.class);
         bindService(bs, mConnection, Context.BIND_AUTO_CREATE);
-
+        //EventBus.getDefault().register(this);
 
     }
 
@@ -198,9 +198,15 @@ public class FoodView extends AppCompatActivity{
         }
     }
     @Override
-    protected void onDestroy(){
+    protected void onStop(){
+        super.onStop();
+    }
+
+    @Override
+    protected  void onDestroy(){
         super.onDestroy();
         unbindService(mConnection);
+        //EventBus.getDefault().unregister(this);
     }
 }
 

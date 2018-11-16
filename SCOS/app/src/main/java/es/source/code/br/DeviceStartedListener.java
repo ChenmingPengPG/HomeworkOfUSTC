@@ -25,8 +25,8 @@ public class DeviceStartedListener extends BroadcastReceiver {
                 context.startService(serviceIntent);
             }
         } else if (intent.getAction().equals("scos.intent.action.CLOSE_NOTIFICATION")) {
-            NotificationManager notifyManager = (NotificationManager) context.getSystemService(Context
-                    .NOTIFICATION_SERVICE);
+            NotificationManager notifyManager = (NotificationManager) context.getSystemService(
+                    Context.NOTIFICATION_SERVICE);
             notifyManager.cancel(intent.getIntExtra("notification_id", 0));
         }
     }

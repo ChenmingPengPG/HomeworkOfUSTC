@@ -38,7 +38,11 @@ public class food_list{
     private int[] hotfood_store = {5,5,5};
     private int[] seafood_store = {5,5,5};
     private int[] drink_store = {5,5,5};
-
+    static{
+        coldfood_name.add("毛豆"); coldfood_price.add(12); coldfood_store.add(5);
+        coldfood_name.add("黄瓜"); coldfood_price.add(13); coldfood_store.add(5);
+        coldfood_name.add("木耳"); coldfood_price.add(14); coldfood_store.add(5);
+    }
     private ArrayList<HashMap<String, Food>> cfl = new ArrayList<HashMap<String, Food>>();
     private ArrayList<HashMap<String, Food>> hfl = new ArrayList<HashMap<String, Food>>();
     private ArrayList<HashMap<String, Food>> sfl = new ArrayList<HashMap<String, Food>>();
@@ -51,10 +55,6 @@ public class food_list{
     public food_list(String name){
         askfor = name;
         if(name.equals("coldfood")){
-            coldfood_name.add("毛豆"); coldfood_price.add(12); coldfood_store.add(5);
-            coldfood_name.add("黄瓜"); coldfood_price.add(13); coldfood_store.add(5);
-            coldfood_name.add("木耳"); coldfood_price.add(14); coldfood_store.add(5);
-
             for(int i = 0; i < coldfood_name.size(); i++){
                 Food cold = new Food(coldfood_name.get(i), coldfood_price.get(i),
                         coldfood_store.get(i), R.drawable.order_item_logo, false);

@@ -1,0 +1,5 @@
+/home/pcm/桌面/useHello/build/CMakeFiles/rebuild_cache.dir
+/home/pcm/桌面/useHello/build/CMakeFiles/edit_cache.dir
+/home/pcm/桌面/useHello/build/src/CMakeFiles/rebuild_cache.dir
+/home/pcm/桌面/useHello/build/src/CMakeFiles/useHello.dir
+/home/pcm/桌面/useHello/build/src/CMakeFiles/edit_cache.dir

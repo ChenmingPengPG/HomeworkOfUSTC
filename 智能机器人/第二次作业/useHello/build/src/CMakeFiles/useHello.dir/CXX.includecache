@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pcm/桌面/useHello/src/useHello.cpp
+hello.h
+/home/pcm/桌面/useHello/src/hello.h
+
+/usr/include/hello/hello.h
+

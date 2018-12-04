@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SimpleController">
+    <output-path>$PROJECT_DIR$/out/artifacts/SimpleController</output-path>
+    <root id="archive" name="SimpleController.jar">
+      <element id="artifact" artifact-name="SimpleController:war exploded" />
+    </root>
+  </artifact>
+</component>

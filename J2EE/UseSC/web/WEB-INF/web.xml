@@ -3,12 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--<welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>-->
+
     <servlet>
-        <servlet-name>SimpleController</servlet-name>
+        <servlet-name>sc</servlet-name>
         <servlet-class>sc.ustc.controller.SimpleController</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>SimpleController</servlet-name>
-        <url-pattern>/SC</url-pattern>
+        <servlet-name>sc</servlet-name>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>

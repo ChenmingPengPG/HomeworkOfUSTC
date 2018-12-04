@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="simple-controller">
+    <output-path>$PROJECT_DIR$/out/artifacts/simple_controller</output-path>
+    <root id="root">
+      <element id="archive" name="SimpleController.jar">
+        <element id="module-output" name="SimpleController" />
+      </element>
+    </root>
+  </artifact>
+</component>

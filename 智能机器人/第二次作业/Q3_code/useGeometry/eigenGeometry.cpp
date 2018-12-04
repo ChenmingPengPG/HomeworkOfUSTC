@@ -14,7 +14,7 @@ int main ( int argc, char** argv )
 {
     // Eigen/Geometry 模块提供了各种旋转和平移的表示
     // 3D 旋转矩阵直接使用 Matrix3d 或 Matrix3f
-    Eigen::Matrix3d rotation_matrix = Eigen::Matrix3d::Identity();
+    Eigen::Matrix3d rotation_matrix = Eigen::Matrix3d::Identity(); //单位矩阵
     // 旋转向量使用 AngleAxis, 它底层不直接是Matrix，但运算可以当作矩阵（因为重载了运算符）
     Eigen::AngleAxisd rotation_vector ( M_PI/4, Eigen::Vector3d ( 0,0,1 ) );     //沿 Z 轴旋转 45 度
     cout .precision(3);
@@ -31,6 +31,7 @@ int main ( int argc, char** argv )
 
     // 欧拉角: 可以将旋转矩阵直接转换成欧拉角
     Eigen::Vector3d euler_angles = rotation_matrix.eulerAngles ( 2,1,0 ); // ZYX顺序，即roll pitch yaw顺序
+    //即 翻滚角，俯仰角，偏航角
     cout<<"yaw pitch roll = "<<euler_angles.transpose()<<endl;
 
     // 欧氏变换矩阵使用 Eigen::Isometry

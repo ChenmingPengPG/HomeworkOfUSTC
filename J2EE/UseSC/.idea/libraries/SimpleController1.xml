@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="SimpleController1">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

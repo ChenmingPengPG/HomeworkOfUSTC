@@ -7,32 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81c1ff96-d9de-46db-bd87-726d7b9cd8ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SimpleController_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/simple_controller.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/artifacts/UseSC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/libraries/SimpleController.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/libraries/SimpleController1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/UseSC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SimpleController.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/artifacts/UseSC_archive.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UseSC/.idea/artifacts/UseSC_archive2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UseSC/web/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../try/.idea/artifacts/try_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../try/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../try/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../try/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../try/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../try/try.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../try/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/simple_controller.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleController.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SimpleController/SimpleController.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SimpleController_war_exploded/WEB-INF/classes/sc/ustc/controller/SimpleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SimpleController_war_exploded/WEB-INF/classes/sc/ustc/controller/mmm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SimpleController_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SimpleController_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SimpleController_jar/SimpleController.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/simple_controller/SimpleController.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleController/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SimpleController/sc/ustc/controller/SimpleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleController/sc/ustc/controller/mmm.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sc/ustc/controller/mmm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../J2EE_Homework/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/.idea/artifacts/UseSC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/.idea/artifacts/UseSC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/.idea/libraries/SimpleController.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/.idea/libraries/SimpleController.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/.idea/libraries/SimpleController1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/UseSC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/UseSC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/out/artifacts/UseSC/WEB-INF/lib/SimpleController.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/out/artifacts/UseSC/WEB-INF/lib/SimpleController.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/out/artifacts/UseSC/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/out/artifacts/UseSC/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/out/artifacts/UseSC/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/out/artifacts/UseSC/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UseSC/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +82,7 @@
     <session id="-423937131">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="2" />
@@ -101,13 +102,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="343" />
+          <entry key="java" value="350" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="343" />
+          <entry key="JAVA" value="350" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
@@ -118,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="75">
+              <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -145,17 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleController.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="400">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -179,8 +171,8 @@
         <option value="$PROJECT_DIR$/src/sc/ustc/controller/main.java" />
         <option value="$PROJECT_DIR$/src/sc/ustc/controller/mmm.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java" />
         <option value="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java" />
       </list>
     </option>
   </component>
@@ -197,7 +189,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="1294" />
     <option name="height" value="1407" />
@@ -220,22 +212,29 @@
             <path>
               <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="SimpleController_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 9.0.13" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 9.0.13" type="70bed36:NamedLibraryElementNode" />
-              <item name="servlet-api.jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,7 +245,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543952711501" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543996899000" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../UseSC" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -353,16 +352,15 @@
       <updated>1543913868066</updated>
       <workItem from="1543913873138" duration="2358000" />
       <workItem from="1543943627781" duration="7501000" />
-      <workItem from="1543951962922" duration="748000" />
+      <workItem from="1543951962922" duration="8424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10607000" />
+    <option name="totallyTimeSpent" value="18283000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1294" height="1407" extended-state="1" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25364667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -397,7 +395,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959481" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25364667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -407,7 +405,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32861635" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32861635" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -441,13 +439,6 @@
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -462,17 +453,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimpleController.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -495,7 +493,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Web (SimpleController)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

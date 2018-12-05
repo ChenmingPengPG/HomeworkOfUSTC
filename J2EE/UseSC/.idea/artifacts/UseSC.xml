@@ -9,7 +9,6 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="SimpleController" />
-          <element id="library" level="project" name="SimpleController1" />
         </element>
       </element>
     </root>

@@ -25,7 +25,7 @@ class App(object):
 #        ret, self.frame = self.cam.read()
         cv2.namedWindow('camshift')
 #抓取红色
-        color = 0
+        int(color)
         if color == 0:
             print("yes")
             self.roi = cv2.imread( 'hong.jpg' )

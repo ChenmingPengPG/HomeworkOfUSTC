@@ -25,19 +25,19 @@ class App(object):
 #        ret, self.frame = self.cam.read()
         cv2.namedWindow('camshift')
 #抓取红色
-	color = 0
+        color = 0
         if color == 0:
-	    print "yes"
+            print("yes")
             self.roi = cv2.imread( 'hong.jpg' )
             self.flag = "Hong"
 #
-	    self.selection = None
+            self.selection = None
             self.tracking_state = 0
             self.show_backproj = False
 #
 	    
-        else :
-	    print "no"
+        else:
+            print("no")
             self.flag = "Lan"
             self.roi = cv2.imread('lan.jpg')
             self.selection = None
@@ -50,9 +50,9 @@ class App(object):
         self.tracking_state = 0
         #x, y = np.int16([220, 110]) # BUG
         if self.flag == 'Hong':
-                self.selection = (4, 6, 407, 304)
-		self.tracking_state = 1
-		print "yes"
+            self.selection = (4, 6, 407, 304)
+            self.tracking_state = 1
+            print("yes")
         else:
             self.selection = (40, 54, 296, 230)
             self.tracking_state = 1
@@ -63,7 +63,7 @@ class App(object):
         bin_w = 24
 #初始化256各 bin_conut × 24， 3 的 矩阵  3维数组， 数据类型为np.uint8 
         img = np.zeros((256, bin_count*bin_w, 3), np.uint8)
-        for i in xrange(bin_count):
+        for i in range(bin_count):
             h = int(self.hist[i])
             cv2.rectangle(img, (i*bin_w+2, 255), ((i+1)*bin_w-2, 255-h), (int(180.0*i/bin_count), 255, 255), -1)
         img = cv2.cvtColor(img, cv2.COLOR_HSV2BGR)
@@ -129,8 +129,8 @@ class App(object):
                 if track_box[1][1] <= 1:
                     self.tracking_state = 0
                     self.start()
-		    print track_box
-		    print "==================================================="
+                    print(track_box)
+                    print("===================================================")
                 else:
                     if self.show_backproj:
                         vis[:] = prob[...,np.newaxis]
@@ -140,9 +140,9 @@ class App(object):
 # 中心的x，y坐标；宽，高；角度
                         a = str(track_box[0][0])+" "+str(track_box[0][1])+" "+str(round(track_box[1][0],2))\
                                        +" "+str(round(track_box[1][1],2))+" "+str(round(track_box[2],2))+"\r\n"
-                        print a
+                        print(a)
 #                         self.ser.write(a)
-                    except: print track_box
+                    except: print(track_box)
 
             cv2.imshow('camshift', vis)
 
@@ -161,7 +161,7 @@ if __name__ == '__main__':
     import sys
     try: color = sys.argv[1]
     except: color = 1
-    print __doc__
+    print(__doc__)
     a = App(color)
     a.run()
 

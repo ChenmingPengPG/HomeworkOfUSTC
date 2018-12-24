@@ -7,18 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b7a5eb3-6c7f-44c1-b5e8-379d35c5165f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/water/ustc/action/LoginAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/water/ustc/action/RegisterAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/loginaction.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/registeraction.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/utils/ControllerResolveHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SimpleController/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/controller/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/controller/SimpleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseSC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UseSC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,8 +78,9 @@
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -143,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/src/controller.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -245,9 +238,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -298,8 +292,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,11 +419,12 @@
       <workItem from="1545407930621" duration="5878000" />
       <workItem from="1545491692349" duration="3212000" />
       <workItem from="1545618633932" duration="598000" />
+      <workItem from="1545641187171" duration="528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24508000" />
+    <option name="totallyTimeSpent" value="25036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,7 +439,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06836461" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06903485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -571,7 +566,7 @@
     <entry file="file://$PROJECT_DIR$/src/controller.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>

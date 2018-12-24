@@ -7,18 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81c1ff96-d9de-46db-bd87-726d7b9cd8ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../UseSC/src/controller.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/src/water/ustc/action/LoginAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/src/water/ustc/action/RegisterAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/web/loginaction.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UseSC/web/registeraction.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sc/ustc/utils/ControllerResolveHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UseSC/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UseSC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UseSC/UseSC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/UseSC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UseSC/out/artifacts/UseSC/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/out/artifacts/UseSC/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UseSC/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UseSC/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,38 +23,39 @@
     <session id="1925630758">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="fxml" value="1" />
+          <entry key="java" value="3" />
           <entry key="jsp" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="3" />
           <entry key="JSP" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="922" />
+          <entry key="java" value="1084" />
           <entry key="jsp" value="38" />
           <entry key="xml" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="922" />
+          <entry key="JAVA" value="1084" />
           <entry key="JSP" value="38" />
           <entry key="XML" value="109" />
         </counts>
@@ -105,11 +98,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="151">
+              <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sc/ustc/utils/ControllerResolveHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,6 +154,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -165,6 +171,8 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java" />
+        <option value="$PROJECT_DIR$/src/sc.ustc.utils.fxml" />
+        <option value="$PROJECT_DIR$/src/sc/ustc/utils/ControllerResolveHelper.java" />
       </list>
     </option>
   </component>
@@ -181,10 +189,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -192,8 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,18 +211,27 @@
             <path>
               <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ustc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ustc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleController" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ustc" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleController" type="b2602c69:ProjectViewProjectNode" />
@@ -225,12 +241,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543996899000" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545641720093" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../J2EE-homework/SimpleController" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -343,17 +361,17 @@
       <workItem from="1545407746506" duration="182000" />
       <workItem from="1545494861471" duration="1538000" />
       <workItem from="1545618634225" duration="1449000" />
+      <workItem from="1545641185118" duration="617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23846000" />
+    <option name="totallyTimeSpent" value="24463000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10656837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18632708" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -437,16 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -465,6 +473,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sc.ustc.utils.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sc/ustc/controller/SimpleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sc/ustc/utils/ControllerResolveHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,13 +1,17 @@
 package sc.ustc.controller;
 
+import org.omg.PortableInterceptor.Interceptor;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.*;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.Map;
 
 public class SimpleController extends HttpServlet {
@@ -30,13 +34,18 @@ public class SimpleController extends HttpServlet {
         boolean findResult = false;
         //查找不到action或result的页面提示语句
         String erroMsg;
+        List<Action> actionList = null;
+        List<Interceptor> interceptorList = null;
 
         //获取参数
         Map<String, String[]> parameterMap = req.getParameterMap();
 
         //通过工具类获取配置文件解析结果
-        ControllerResolveHelper
+        //ControllerResolveHelper
 
+        for(Action action : actionList){
+            if(action.getName().equals(actionStr));
+        }
 
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();

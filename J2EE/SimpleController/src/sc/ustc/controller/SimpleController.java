@@ -3,10 +3,12 @@ package sc.ustc.controller;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Map;
 
 public class SimpleController extends HttpServlet {
     public void init(ServletConfig arg0) throws SecurityException{
@@ -16,6 +18,26 @@ public class SimpleController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         System.out.println("发送post方法");
+        //第二次添加
+        //解析url获取请求action名称
+        String url = req.getRequestURL().toString();
+        System.out.println(url);
+        String actionStr = url.substring(url.lastIndexOf('/')+1, url.length()-3);
+        String resultStr = "";
+        //action查找状态
+        boolean findAction = false;
+        //result查找状态
+        boolean findResult = false;
+        //查找不到action或result的页面提示语句
+        String erroMsg;
+
+        //获取参数
+        Map<String, String[]> parameterMap = req.getParameterMap();
+
+        //通过工具类获取配置文件解析结果
+        ControllerResolveHelper
+
+
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();
         String title = "SimpleController";

@@ -13,6 +13,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>sc</servlet-name>
-        <url-pattern>/sc</url-pattern>
+        <url-pattern>*.sc</url-pattern>
     </servlet-mapping>
+
 </web-app>

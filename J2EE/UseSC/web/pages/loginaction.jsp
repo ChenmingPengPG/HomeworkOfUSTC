@@ -15,7 +15,7 @@
     <h3>请登录：</h3><br>
     <form action="login.sc" name="loginForm">
         <div>账&nbsp&nbsp号：<input type="text" name="id" /></div>
-        <div>密&nbsp&nbsp码：<input type="text" name="password" /></div>
+        <div>密&nbsp&nbsp码：<input type="password" name="password" /></div>
         <div><input type="submit" name="login" value="登录" /></div>
     </form>
     <div>

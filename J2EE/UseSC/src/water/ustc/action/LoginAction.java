@@ -1,7 +1,12 @@
 package water.ustc.action;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-public class LoginAction {
+public class LoginAction extends HttpServlet {
     private String userName;
     private String password;
     public String getUserName(){
@@ -17,8 +22,11 @@ public class LoginAction {
     public void setPassword(String password){
         this.password = password;
     }
-    public String handleLogin(){
-        /*boolean flag = true;
+    public String handleLogin(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+        setUserName(request.getParameter("id"));
+        setPassword(request.getParameter("password"));
+        boolean flag = true;
         System.out.println("-----登录用户信息-----");
         System.out.println("--用户名："+userName);
         System.out.println("--密码："+password);
@@ -37,8 +45,7 @@ public class LoginAction {
             return "success";
         }else{
             return "failure";
-        }*/
-        return "success";
+        }
     }
 
 }

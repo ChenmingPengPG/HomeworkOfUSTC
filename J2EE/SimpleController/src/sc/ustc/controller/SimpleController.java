@@ -1,9 +1,7 @@
 package sc.ustc.controller;
 
 import sc.ustc.items.*;
-import sc.ustc.utils.ControllerXMLHelper;
-import sc.ustc.utils.ExecutHelperImp;
-import sc.ustc.utils.ParseXML;
+import sc.ustc.utils.*;
 import sc.ustc.myInterface.ExecuteHelper;
 
 import javax.servlet.ServletConfig;
@@ -16,7 +14,6 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
-import sc.ustc.utils.ProxyHandler;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -180,17 +177,27 @@ public class SimpleController extends HttpServlet {
      * @throws IOException
      */
     public void doWithResult(Result result, HttpServletRequest req, HttpServletResponse resp,
-                                ServletContext context) throws ServletException, IOException {
+                                ServletContext context) throws ServletException, IOException, ParserConfigurationException, SAXException {
         if(result == null)return;
 
         InputStream is = context.getResourceAsStream(result.getValue());
 
-        if (result.equals("success")) {
+        if (result.getName().equals("success")) {
             // 使用forward方式
-            if (url.indexOf("pages") == -1) {
-                req.getRequestDispatcher(result.getValue()).forward(req, resp);
-            } else {
-                req.getRequestDispatcher("welcome.jsp").forward(req, resp);
+            if(result.getValue().endsWith("_view.xml")){
+                System.out.println("!!!!!!!!!!!!!!!!");
+                XMLToHTMLHelper helper = new XMLToHTMLHelper(result.getValue(),context);
+                String htmlString = helper.parseXML().produceHTML();
+                PrintWriter out = resp.getWriter();
+                out.print(htmlString);
+            }else{
+                if (url.indexOf("pages") == -1) {
+                    req.getRequestDispatcher(result.getValue()).forward(req, resp);
+                } else {
+                    String res = result.getValue();
+                    String rr =res.substring(res.lastIndexOf('/')+1);
+                    req.getRequestDispatcher(rr).forward(req, resp);
+                }
             }
         } else {
             // 使用redirect方式

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="UseSC archive2">
-    <output-path>$PROJECT_DIR$/out/artifacts/UseSC_archive2</output-path>
-    <root id="archive" name="UseSC archive.war">
-      <element id="artifact" artifact-name="UseSC" />
-    </root>
-  </artifact>
-</component>

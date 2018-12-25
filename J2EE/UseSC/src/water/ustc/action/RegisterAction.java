@@ -19,8 +19,8 @@ public class RegisterAction {
     public void setPassword(String password){
         this.password = password;
     }
-    public String excute(){
-        boolean flag = true;
+    public String handleRegister(){
+        /*boolean flag = true;
         System.out.println("-----注册用户信息-----");
         System.out.println("--用户名："+userName);
         System.out.println("--密码："+password);
@@ -36,11 +36,13 @@ public class RegisterAction {
             flag = false;
         }
         if(flag){
-            return "true";
+            return "success";
         }else{
-            return "false";
-        }
+            return "failure";
+        }*/
+        return "failure";
     }
+
 
 
 }

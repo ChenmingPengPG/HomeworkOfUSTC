@@ -17,8 +17,8 @@ public class LoginAction {
     public void setPassword(String password){
         this.password = password;
     }
-    public String excute(){
-        boolean flag = true;
+    public String handleLogin(){
+        /*boolean flag = true;
         System.out.println("-----登录用户信息-----");
         System.out.println("--用户名："+userName);
         System.out.println("--密码："+password);
@@ -34,10 +34,11 @@ public class LoginAction {
             flag = false;
         }
         if(flag){
-            return "true";
+            return "success";
         }else{
-            return "false";
-        }
+            return "failure";
+        }*/
+        return "success";
     }
 
 }

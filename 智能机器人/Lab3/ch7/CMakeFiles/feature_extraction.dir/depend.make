@@ -128,4 +128,9 @@ CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/o
 CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/opencv2/videostab/ring_buffer.hpp
 CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/opencv2/videostab/stabilizer.hpp
 CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/opencv2/videostab/wobble_suppression.hpp
+CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/opencv2/viz.hpp
+CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/opencv2/viz/types.hpp
+CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/opencv2/viz/viz3d.hpp
+CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/opencv2/viz/vizcore.hpp
+CMakeFiles/feature_extraction.dir/feature_extraction.cpp.o: /usr/local/include/opencv2/viz/widgets.hpp
 

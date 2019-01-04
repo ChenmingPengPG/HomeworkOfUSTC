@@ -129,4 +129,9 @@ CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/vid
 CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/videostab/ring_buffer.hpp
 CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/videostab/stabilizer.hpp
 CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/videostab/wobble_suppression.hpp
+CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/viz.hpp
+CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/viz/types.hpp
+CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/viz/viz3d.hpp
+CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/viz/vizcore.hpp
+CMakeFiles/triangulation.dir/triangulation.cpp.o: /usr/local/include/opencv2/viz/widgets.hpp
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 '''
 Created on Jan 12, 2015
 
@@ -8,7 +9,6 @@ Created on Jan 12, 2015
 '''
 This module contais some common routines used by other samples.
 '''
-
 import numpy as np
 import cv2
 import os
@@ -139,7 +139,7 @@ def clock():
 
 @contextmanager
 def Timer(msg):
-    print(msg, '...', end=' ')
+    print (msg, '...', end = ' ')
     start = clock()
     try:
         yield

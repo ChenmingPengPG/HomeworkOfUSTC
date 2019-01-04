@@ -403,3 +403,8 @@ CMakeFiles/pose_estimation_3d2d.dir/pose_estimation_3d2d.cpp.o
  /usr/local/include/opencv2/videostab/ring_buffer.hpp
  /usr/local/include/opencv2/videostab/stabilizer.hpp
  /usr/local/include/opencv2/videostab/wobble_suppression.hpp
+ /usr/local/include/opencv2/viz.hpp
+ /usr/local/include/opencv2/viz/types.hpp
+ /usr/local/include/opencv2/viz/viz3d.hpp
+ /usr/local/include/opencv2/viz/vizcore.hpp
+ /usr/local/include/opencv2/viz/widgets.hpp

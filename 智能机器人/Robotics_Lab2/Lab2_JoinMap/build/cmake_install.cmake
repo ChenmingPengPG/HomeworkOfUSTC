@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pcm/桌面/HomeworkOfUSTC/智能机器人/Robotics_Lab2/Lab2_JoinMap/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pcm/桌面/HomeworkOfUSTC/智能机器人/Robotics_Lab2/Lab2_JoinMap/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,4 @@
-# Install script for directory: /home/pcm/桌面/Q3_code/visualizeGeometry
+# Install script for directory: /home/pcm/桌面/HomeworkOfUSTC/智能机器人/第二次作业/Q3_code/visualizeGeometry
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pcm/桌面/Q3_code/visualizeGeometry/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pcm/桌面/HomeworkOfUSTC/智能机器人/第二次作业/Q3_code/visualizeGeometry/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

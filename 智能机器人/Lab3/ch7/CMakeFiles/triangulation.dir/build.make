@@ -97,6 +97,7 @@ triangulation: /usr/local/lib/libopencv_shape.so.3.4.0
 triangulation: /usr/local/lib/libopencv_stitching.so.3.4.0
 triangulation: /usr/local/lib/libopencv_superres.so.3.4.0
 triangulation: /usr/local/lib/libopencv_videostab.so.3.4.0
+triangulation: /usr/local/lib/libopencv_viz.so.3.4.0
 triangulation: /usr/local/lib/libopencv_calib3d.so.3.4.0
 triangulation: /usr/local/lib/libopencv_features2d.so.3.4.0
 triangulation: /usr/local/lib/libopencv_flann.so.3.4.0

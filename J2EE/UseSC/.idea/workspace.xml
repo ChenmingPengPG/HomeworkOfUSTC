@@ -7,28 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b7a5eb3-6c7f-44c1-b5e8-379d35c5165f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/items/HtmlItems/Body.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/items/HtmlItems/ButtonView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/items/HtmlItems/Form.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/items/HtmlItems/HTMLEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/items/HtmlItems/HTMLProduce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/items/HtmlItems/Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/items/HtmlItems/TextView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/items/HtmlItems/Widget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/test/TestXMLHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/utils/XMLToHTMLHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pages/success_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/water/ustc/bean/UserBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/water/ustc/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleController/.idea/artifacts/SimpleController_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/.idea/artifacts/SimpleController_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SimpleController/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleController/SimpleController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/SimpleController.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_war_exploded/WEB-INF/classes/sc/ustc/controller/SimpleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_war_exploded/WEB-INF/classes/sc/ustc/controller/SimpleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SimpleController/out/production/SimpleController/sc/ustc/controller/SimpleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/out/production/SimpleController/sc/ustc/controller/SimpleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/controller/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleController/src/sc/ustc/controller/SimpleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/UseSC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/UseSC.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/controller.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/controller.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UseSC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UseSC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/log.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/log.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/water/ustc/action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/water/ustc/action/LoginAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/lib/SimpleController.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/lib/SimpleController.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UseSC/controller.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UseSC/controller.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UseSC/water/ustc/action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UseSC/water/ustc/action/LoginAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/water/ustc/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/water/ustc/action/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SCOS/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../SCOS/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SCOS/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SCOS/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SCOS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SCOS/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SCOS/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SCOS/.idea/runConfigurations.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +40,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/UseSC$model2.ic" NAME="model2 Coverage Results" MODIFIED="1545703900462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/UseSC$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1545720562553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/UseSC$try.ic" NAME="try Coverage Results" MODIFIED="1545766440782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UseSC$try.ic" NAME="try Coverage Results" MODIFIED="1545830318690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="16" />
@@ -49,52 +49,53 @@
     <session id="821455598">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="4" />
-          <entry key="class" value="9" />
+          <entry key="class" value="29" />
           <entry key="html" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="10" />
+          <entry key="java" value="18" />
           <entry key="jsp" value="14" />
           <entry key="tld" value="1" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="9" />
+          <entry key="CLASS" value="29" />
           <entry key="HTML" value="5" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="10" />
+          <entry key="JAVA" value="18" />
           <entry key="JSP" value="14" />
           <entry key="Manifest" value="4" />
-          <entry key="XML" value="13" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="MF" value="2" />
-          <entry key="class" value="10" />
+          <entry key="class" value="17" />
           <entry key="html" value="52" />
           <entry key="iml" value="1" />
-          <entry key="java" value="706" />
+          <entry key="java" value="2340" />
           <entry key="jsp" value="236" />
           <entry key="xml" value="800" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CLASS" value="10" />
+          <entry key="CLASS" value="17" />
           <entry key="HTML" value="52" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="706" />
+          <entry key="JAVA" value="2340" />
           <entry key="JSP" value="236" />
           <entry key="Manifest" value="2" />
           <entry key="XML" value="800" />
@@ -153,24 +154,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/welcome.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -180,73 +163,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/success_view.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/water/ustc/interceptor/LogInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/failure.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/loginaction.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/registeraction.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/water/ustc/action/LoginAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+            <state relative-caret-position="650">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/water/ustc/bean/UserBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/dao/BaseDao.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/water/ustc/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1457#1458#0" expanded="true" />
+                <element signature="e#1489#1490#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/controller/SimpleController.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
@@ -260,8 +227,8 @@
         <option value="jsf" />
         <option value="FxmlFile" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Tag Library Descriptor" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -288,7 +255,6 @@
         <option value="$PROJECT_DIR$/web/pages/failure.jsp" />
         <option value="$PROJECT_DIR$/src/water/ustc/interceptor/afterAction.java" />
         <option value="$PROJECT_DIR$/web/pages/loginaction.jsp" />
-        <option value="$PROJECT_DIR$/src/water/ustc/action/LoginAction.java" />
         <option value="$PROJECT_DIR$/src/water/ustc/action/RegisterAction.java" />
         <option value="$PROJECT_DIR$/web/pages/registeraction.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -296,6 +262,10 @@
         <option value="$PROJECT_DIR$/src/water/ustc/utils/LogXMLHelper.java" />
         <option value="$PROJECT_DIR$/web/pages/success_view.xml" />
         <option value="$PROJECT_DIR$/src/controller.xml" />
+        <option value="$PROJECT_DIR$/src/water/ustc/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/log.xml" />
+        <option value="$PROJECT_DIR$/src/water/ustc/bean/UserBean.java" />
+        <option value="$PROJECT_DIR$/src/water/ustc/dao/UserDao.java" />
       </list>
     </option>
   </component>
@@ -313,7 +283,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="-5" />
     <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
@@ -325,7 +295,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,31 +318,14 @@
               <item name="UseSC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ustc" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UseSC" type="b2602c69:ProjectViewProjectNode" />
               <item name="UseSC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ustc" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UseSC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UseSC" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UseSC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UseSC" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UseSC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UseSC" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UseSC" type="b2602c69:ProjectViewProjectNode" />
@@ -383,6 +335,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -390,11 +343,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545766637789" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleController" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546899836728" />
+    <property name="last_opened_file_path" value="C:/sqlite/sqlite-jdbc-3.23.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -516,11 +469,15 @@
       <workItem from="1545641187171" duration="528000" />
       <workItem from="1545671186925" duration="12959000" />
       <workItem from="1545721899765" duration="30911000" />
+      <workItem from="1545827485584" duration="2229000" />
+      <workItem from="1546343665121" duration="2409000" />
+      <workItem from="1546879612229" duration="18904000" />
+      <workItem from="1546899917581" duration="1684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68906000" />
+    <option name="totallyTimeSpent" value="94132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,10 +489,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
-    <editor active="true" />
+    <frame x="-5" y="0" width="1294" height="1407" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30145866" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1758509" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -545,8 +501,8 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49918962" visible="true" weight="0.43160376" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49918962" weight="0.43160376" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39937106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
@@ -566,10 +522,10 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info active="true" anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.16045381" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.16045381" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18395463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17341977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -579,7 +535,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49918962" visible="true" weight="0.3058176" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49918962" weight="0.43160376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -600,7 +556,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.16126418" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.16045381" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,6 +564,54 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/water/ustc/dao/UserDao.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/water/ustc/dao/UserDao.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/dao/BaseDao.class</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/dao/BaseDao.class</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/dao/BaseDao.class</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/dao/BaseDao.class</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="request" />
+        <watch expression="statement" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController/SimpleController.jar!/index.jsp" />
@@ -646,20 +650,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/water/ustc/interceptor/preAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/water/ustc/interceptor/afterAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/water/ustc/interceptor/preAction.java" />
+    <entry file="file://$PROJECT_DIR$/src/water/ustc/interceptor/afterAction.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -671,112 +663,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/controller/SimpleController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/utils/LogXMLHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="67" column="33" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/registeraction.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/loginaction.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/water/ustc/action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/success_view.tld">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/log.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/utils/LogXMLHelper.class" />
+    <entry file="file://$PROJECT_DIR$/web/pages/success_view.tld" />
     <entry file="file://$PROJECT_DIR$/src/water/ustc/utils/LogXMLHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="718">
           <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/failure.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/success_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -787,13 +682,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/failure.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/loginaction.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean.java" />
+    <entry file="file://$PROJECT_DIR$/web/pages/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/registeraction.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/UseSC/WEB-INF/classes/log.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="122" column="12" lean-forward="true" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/items/Action.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/apache-tomcat-9.0.13/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="291" selection-start-line="291" selection-end-line="291" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/water/ustc/interceptor/LogInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="363">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/success_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/sqlite/sqlite-jdbc-3.23.1.jar!/org/sqlite/core/DB.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
@@ -801,6 +774,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="81" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/water/ustc/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/sqlite/sqlite-jdbc-3.16.1.jar!/org/sqlite/SQLiteConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="2877" selection-start-line="2877" selection-end-line="2877" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/sqlite/sqlite-jdbc-3.16.1.jar!/org/sqlite/core/CoreConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="276" selection-start-line="276" selection-end-line="276" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/sqlite/sqlite-jdbc-3.16.1.jar!/org/sqlite/JDBC.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/water/ustc/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/water/ustc/bean/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/dao/BaseDao.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../SimpleController/out/artifacts/SimpleController_jar/SimpleController.jar!/sc/ustc/controller/SimpleController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
@@ -863,7 +914,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

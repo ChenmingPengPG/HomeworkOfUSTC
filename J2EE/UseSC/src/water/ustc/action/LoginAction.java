@@ -1,4 +1,6 @@
 package water.ustc.action;
+import water.ustc.bean.UserBean;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,6 +24,7 @@ public class LoginAction extends HttpServlet {
     public void setPassword(String password){
         this.password = password;
     }
+
     public String handleLogin(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
         setUserName(request.getParameter("id"));
@@ -30,7 +33,18 @@ public class LoginAction extends HttpServlet {
         System.out.println("-----登录用户信息-----");
         System.out.println("--用户名："+userName);
         System.out.println("--密码："+password);
-        Pattern passwd_pattern = Pattern.compile("[0-9]*");
+        UserBean userBean = new UserBean();
+        userBean.setUserName(userName);
+        userBean.setUserPass(password);
+        /*userBean.signIn();
+        return "success";*/
+        if(userBean.signIn()){
+            return "success";
+        }else{
+            System.out.println("failure");
+            return "failure";
+        }
+        /*Pattern passwd_pattern = Pattern.compile("[0-9]*");
         Pattern user_pattern = Pattern.compile("[A-Z]*");
         Matcher isPassOK = passwd_pattern.matcher(password);
         Matcher isUserOk = user_pattern.matcher(userName);
@@ -45,7 +59,7 @@ public class LoginAction extends HttpServlet {
             return "success";
         }else{
             return "failure";
-        }
+        }*/
     }
 
 }

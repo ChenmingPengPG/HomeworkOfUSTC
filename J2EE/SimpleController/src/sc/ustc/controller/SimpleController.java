@@ -72,91 +72,19 @@ public class SimpleController extends HttpServlet {
             resultStr = getResultStringByAction(action, interceptors, req, resp);
             Result result = searchResult(action, resultStr);
             doWithResult(result, req, resp, context);
-            /*ParseXML parseXML = new ParseXML(XML_RELATIVE_PATH, req.getSession().getServletContext());
-
-            Node actionNode = parseXML.findActionNode(actionStr);
-            if (actionNode == null) {
-                // 说明没有找到匹配的action结点
-                findAction = false;
-            } else {
-                // 找到了匹配的action结点
-
-                // 获得action结点的属性的键值
-                Map<String, String> mapAction = parseXML.getAttributionOfActionNode(actionNode);
-
-                // 获得类名和方法名
-                String className = mapAction.get(ParseXML.CLASS_TAG);
-                String methodName = mapAction.get(ParseXML.METHOD_TAG);
-
-                // 利用反射创建类对象
-                Class<?> c = Class.forName(className);
-                Method method = c.getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
-                String result = (String) method.invoke(c.newInstance(), req, resp);
-
-                System.out.println("result " + result);
-
-                Node resultNode = parseXML.findResultNodeFromActionNode(actionNode, result);
-                if (resultNode == null) {
-                    // 没有找到匹配的result
-                    findResult = false;
-                } else {
-
-                    // 找到了匹配的result
-                    Map<String, String> mapResult = parseXML.getAttributionOfResultNode(resultNode);
-                    System.out.println("name "+ mapResult.get("name"));
-                    System.out.println("type " + mapResult.get("type"));
-                    System.out.println("value " + mapResult.get("value"));
-
-                    String type = mapResult.get(ParseXML.TYPE_TAG);
-                    String value = mapResult.get(ParseXML.VALUE_TAG);
-                    System.out.println(req.getRequestURL().toString());
-                    if (type.equals(TYPE_FORWARD)) {
-                        *//*
-                        System.out.println(url.substring(url.lastIndexOf('/')+1));
-                        使用forward方式
-                        *//*
-                        if (url.indexOf("pages") == -1) {
-                            req.getRequestDispatcher(value).forward(req, resp);
-                        } else {
-                            req.getRequestDispatcher("welcome.jsp").forward(req, resp);
-                        }
-                    } else {
-                        // 使用redirect方式\
-                        resp.sendRedirect("//localhost:8080/"+value);
-                    }
-                }
-            }*/
-
-        /*if (findAction == false || findResult == false) {
-            String message = (findAction == false ? "Can't find the request of action!"
-                    : "No resource of request(result)!");
-            PrintWriter out = resp.getWriter();
-            out.write("<html><head><title>COS</title></head><body>" + message + "</body></html>");
-        }*/
-        /*resp.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = resp.getWriter();
-        String title = "SimpleController";
-        String body = "欢迎使用SimpleController";
-        String docType = "<!DOCTYPE html> \n";
-        out.println(docType +
-                "<html> \n" +
-                "<head><meta charset = \"utf-8\"><title>" + title +"</title></head>\n" +
-                "<body><meta charset = \"utf-8\">" + body + "</body>\n" +
-                "</html>"
-        );*/
         } catch (SAXException e) {
             e.printStackTrace();
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
             e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
+        }  catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
         doWithFailed(resp);
@@ -179,7 +107,6 @@ public class SimpleController extends HttpServlet {
     public void doWithResult(Result result, HttpServletRequest req, HttpServletResponse resp,
                                 ServletContext context) throws ServletException, IOException, ParserConfigurationException, SAXException {
         if(result == null)return;
-
         InputStream is = context.getResourceAsStream(result.getValue());
 
         if (result.getName().equals("success")) {
@@ -220,8 +147,10 @@ public class SimpleController extends HttpServlet {
 
     public Action searchAction(List<Action> actions, String actionStr){
         for(Action action : actions){
-            if(action.getName().equals(actionStr))
+            if(action.getName().equals(actionStr)) {
+                findAction = true;
                 return action;
+            }
         }
         findAction = false;
         return null;
@@ -233,7 +162,10 @@ public class SimpleController extends HttpServlet {
         }
         List<Result> results = action.getResultNodes();
         for(Result result:results) {
-            if(result.getName().equals(resultString))return result;
+            if(result.getName().equals(resultString)){
+                findResult = true;
+                return result;
+            }
         }
 
         //没有找到
@@ -252,6 +184,7 @@ public class SimpleController extends HttpServlet {
         String methodName = action.getMethodName();
         System.out.println(className);
         System.out.println(methodName);
+        System.out.println("------------");
 
         List<InterceptroREF> list = action.getInterceptroRefNodes();//获得需要拦截的拦截器
         System.out.println(list.size());

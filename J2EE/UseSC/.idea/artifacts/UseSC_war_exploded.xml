@@ -8,6 +8,7 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="SimpleController" />
+          <element id="file-copy" path="C:/sqlite/sqlite-jdbc-3.23.1.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="UseSC/web/Web" />

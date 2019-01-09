@@ -9,6 +9,9 @@
         </element>
         <element id="directory" name="lib">
           <element id="file-copy" path="C:/sqlite/sqlite-jdbc-3.23.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../mysql-connector-java-5.1.47-bin.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../asm-7.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../cglib-3.2.10.jar" />
         </element>
       </element>
     </root>

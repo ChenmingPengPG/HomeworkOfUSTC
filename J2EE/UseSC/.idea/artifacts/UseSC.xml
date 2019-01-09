@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="UseSC">
+  <artifact type="war" name="UseSC">
     <output-path>$PROJECT_DIR$/out/artifacts/UseSC</output-path>
-    <root id="root">
+    <root id="archive" name="UseSC.war">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="UseSC" />
@@ -9,6 +9,9 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="SimpleController" />
           <element id="file-copy" path="C:/sqlite/sqlite-jdbc-3.23.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../mysql-connector-java-5.1.47-bin.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../asm-7.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../cglib-3.2.10.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="UseSC/web/Web" />

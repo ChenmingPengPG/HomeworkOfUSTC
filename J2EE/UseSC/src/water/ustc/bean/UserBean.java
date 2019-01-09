@@ -1,14 +1,22 @@
 package water.ustc.bean;
 
+import sc.ustc.items.JDBCItems.BaseBean;
 import water.ustc.dao.UserDao;
 
 import java.sql.Connection;
 import java.sql.Statement;
 
-public class UserBean {
-    private String userId;
-    private String userName;
-    private String userPass;
+public class UserBean extends BaseBean {
+    public UserBean(){
+
+    }
+    public UserBean(String userName) {
+        super(userName);
+    }
+
+    public UserBean(String userName,String userPass) {
+        super(userName,userPass);
+    }
 
     public void setUserId(String ID){
         this.userId = ID;
@@ -31,13 +39,13 @@ public class UserBean {
 
     public boolean signIn(){
         UserDao userDao = new UserDao();
-        String loginSql = "SELECT * FROM user WHERE userName='" + this.userName
+        /*String loginSql = "SELECT * FROM user WHERE userName='" + this.userName
                 + "';";
         Connection connection = userDao.openDBConnection();
-        Statement ss = userDao.getStatement();
+        Statement ss = userDao.getStatement();*/
         System.out.println("---------");
-        UserBean user =  userDao.query(loginSql);
-        userDao.closeDBConnection();
+        UserBean user =  userDao.query(userName);
+        //userDao.closeDBConnection();
         return this.userPass.equals(user.userPass);
     }
 }

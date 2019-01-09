@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OR-Mappings>
+    <jdbc>
+        <poperty>
+            <name>driver_class</name>
+            <value>org.sqlite.JDBC</value>
+            <!--<value>com.mysql.jdbc.Driver</value>-->
+        </poperty>
+        <property>
+            <name>url_path</name>
+            <value>jdbc:sqlite://d:/PCM/Desktop/PCM.db</value>
+            <!--<value>jdbc:mysql://localhost:3306/pcm?useSSL=false&amp;serverTimezone=UTC</value>-->
+        </property>
+        <!--<poperty>
+            <name>db_username</name>
+            <value>root</value>
+        </poperty>
+        <poperty>
+            <name>db_userpassword</name>
+            <value>123456</value>
+        </poperty>-->
+    </jdbc>
+    <class>
+        <name>UserBean</name>
+        <table>user</table>
+        <id>
+            <name>userId</name>
+        </id>
+        <property>
+            <name>userName</name>
+            <column>userName</column>
+            <type>String</type>
+            <lazy>false</lazy>
+        </property>
+        <property>
+            <name>userPass</name>
+            <column>userPass</column>
+            <type>String</type>
+            <lazy>true</lazy>
+        </property>
+    </class>
+</OR-Mappings>

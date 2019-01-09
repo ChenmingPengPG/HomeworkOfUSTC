@@ -8,16 +8,17 @@ import java.sql.Statement;
 public abstract class BaseDao  {
     protected String driver;
     protected String url;
-    protected String userName;
-    protected String userPassword;
+    protected String user;
+    protected String password;
+
     protected Connection connection;
     protected Statement statement;
 
     public Connection openDBConnection(){
         try {
-            connection = null;
-            Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite://D:/PCM/Desktop/PCM.db");
+            Class.forName(driver);
+            //connection = DriverManager.getConnection(url);
+            connection = DriverManager.getConnection(url, user, password);
             statement = connection.createStatement();// 获取执行sql语句的statement对象
             return connection;
         } catch (SQLException e) {
@@ -43,11 +44,11 @@ public abstract class BaseDao  {
     public void setUrl(String url){
         this.url = url;
     }
-    public void setUserName(String userName){
-        this.userName = userName;
+    public void setUser(String user){
+        this.user = user;
     }
-    public void setUserPassword(String userPassword){
-        this.userPassword = userPassword;
+    public void setPassword(String password){
+        this.password = password;
     }
     abstract public Object query(String sql);
     abstract public boolean insert(String sql);

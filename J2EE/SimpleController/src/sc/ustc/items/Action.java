@@ -1,4 +1,6 @@
 package sc.ustc.items;
+import sc.ustc.items.JDBCItems.BaseBean;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +17,8 @@ public class Action {
     private String methodName;
 
     private String result;
+
+    private BaseBean userBean;
 
     private List<Result> resultNodes = new ArrayList<>();
     private List<InterceptroREF> interceptroRefNodes = new ArrayList<>();
@@ -73,6 +77,12 @@ public class Action {
         return interceptors;
     }
 
+    public BaseBean getUserBean(){
+        return this.userBean;
+    }
+    public void setUserBean(BaseBean userBean){
+        this.userBean = userBean;
+    }
 
     /**
      * 	在一个Interceptor的列表中按顺序找出action中定义的拦截器

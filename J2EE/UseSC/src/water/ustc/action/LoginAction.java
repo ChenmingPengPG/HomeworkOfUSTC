@@ -1,4 +1,5 @@
 package water.ustc.action;
+import sc.ustc.items.JDBCItems.BaseBean;
 import water.ustc.bean.UserBean;
 
 import javax.servlet.ServletException;
@@ -11,6 +12,10 @@ import java.util.regex.Matcher;
 public class LoginAction extends HttpServlet {
     private String userName;
     private String password;
+    private UserBean userBean;
+    public void setUserBean(UserBean userBean){
+        this.userBean = userBean;
+    }
     public String getUserName(){
         return userName;
     }
@@ -33,7 +38,7 @@ public class LoginAction extends HttpServlet {
         System.out.println("-----登录用户信息-----");
         System.out.println("--用户名："+userName);
         System.out.println("--密码："+password);
-        UserBean userBean = new UserBean();
+        /*UserBean userBean = new UserBean();*/
         userBean.setUserName(userName);
         userBean.setUserPass(password);
         /*userBean.signIn();
@@ -60,6 +65,15 @@ public class LoginAction extends HttpServlet {
         }else{
             return "failure";
         }*/
+    }
+
+    public String handleLogin(BaseBean baseBean){
+        userBean = new UserBean(baseBean.getUserName(), baseBean.getUserPass());
+        if(userBean.signIn()){
+            return "success";
+        }else{
+            return "failure";
+        }
     }
 
 }

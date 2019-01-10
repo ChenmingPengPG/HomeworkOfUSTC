@@ -78,7 +78,7 @@ public class Conversation {
         ResultSet result = null;
         try {
             result = statement.executeQuery(sql);
-            connection.close();
+            //connection.close();
             if(!result.next())return null;
             return result;
         } catch (SQLException e) {

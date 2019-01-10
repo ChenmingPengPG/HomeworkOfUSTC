@@ -1,6 +1,9 @@
 package sc.ustc.controller;
 
 import sc.ustc.items.*;
+import sc.ustc.items.DiItems.Bean;
+import sc.ustc.items.DiItems.Field;
+import sc.ustc.items.JDBCItems.BaseBean;
 import sc.ustc.utils.*;
 import sc.ustc.myInterface.ExecuteHelper;
 
@@ -43,6 +46,8 @@ public class SimpleController extends HttpServlet {
     //result查找状态
     boolean findResult = false;
     String url = "";
+    private Object object;
+
 
     public void init(ServletConfig arg0) throws SecurityException{
         System.out.println("========init========");
@@ -145,15 +150,54 @@ public class SimpleController extends HttpServlet {
         }
     }
 
-    public Action searchAction(List<Action> actions, String actionStr){
+    public Action searchAction(List<Action> actions, String actionStr)
+            throws IOException, SAXException, ParserConfigurationException,
+            ClassNotFoundException, IllegalAccessException,
+            InstantiationException, NoSuchMethodException,
+            InvocationTargetException {
+        Action result = null;
         for(Action action : actions){
             if(action.getName().equals(actionStr)) {
+                result = action;
                 findAction = true;
-                return action;
+                break;
             }
         }
-        findAction = false;
-        return null;
+        if(result == null){
+            findAction = false;
+            return null;
+        }else{
+            DiXMLHelper helper = new DiXMLHelper();
+            Map<String, Bean> map = helper.getDiData();
+            Bean bean = map.get(result.getName());
+            if(bean != null && bean.getField() != null){
+                //找到了相应的bean，且含有依赖
+                //获取依赖
+                Field field = bean.getField();
+                //依赖的bean名(xml中定义的)
+                String ref = field.getRef();
+                //依赖上述bean的属性名
+                Bean refBean = map.get(ref);
+                Class<?> clazz = Class.forName(refBean.getClassName());
+                //生成对象
+                object = clazz.newInstance();
+                Method[] methods = clazz.getMethods();
+                for(Method method : methods){
+                    System.out.println(method.getName());
+                }
+                //获得setter方法
+                Method setNameMethod = clazz.getMethod("setUserName", String.class);
+                Method setPassMethod = clazz.getMethod("setUserPass", String.class);
+                //通过方法调用用户名和密码为
+                setNameMethod.invoke(object, "PCM");
+                setPassMethod.invoke(object, "233");
+
+                result.setUserBean((BaseBean) object);
+                //之后需要将通过反射构建好的UserBean实例注入LoginAction中
+            }
+        }
+
+        return result;
     }
 
     public Result searchResult(Action action,String resultString) {
@@ -210,10 +254,13 @@ public class SimpleController extends HttpServlet {
         }
         // 利用反射创建类对象
         Class<?> c = Class.forName(className);
-        Method method = c.getMethod(methodName,HttpServletRequest.class, HttpServletResponse.class);
-        String result = (String)method.invoke(c.newInstance(), req, resp);
+        Method method = c.getMethod(methodName, BaseBean.class);
+        //Method method2 = c.getMethod(methodName,HttpServletRequest.class, HttpServletResponse.class);
+        Object object_n = c.newInstance();
+        //String result = (String)method.invoke(c.newInstance(), req, resp);
+        String result = (String)method.invoke(object_n, action.getUserBean());
         action.setResult(result);
-        //System.out.println(stack.size());
+        System.out.println(stack.size());
         while(!stack.isEmpty()) {
             ProxyStackElement element = stack.pop();
             element.getAfterMethod().invoke(element.getInterceptorInstance(),action);

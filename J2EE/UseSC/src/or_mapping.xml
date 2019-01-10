@@ -8,17 +8,17 @@
         </poperty>
         <property>
             <name>url_path</name>
-            <value>jdbc:sqlite://d:/PCM/Desktop/PCM.db</value>
+            <value>jdbc:sqlite://d:/PCM/Desktop/pcm.db</value>
             <!--<value>jdbc:mysql://localhost:3306/pcm?useSSL=false&amp;serverTimezone=UTC</value>-->
         </property>
-        <!--<poperty>
+        <poperty>
             <name>db_username</name>
             <value>root</value>
         </poperty>
         <poperty>
             <name>db_userpassword</name>
             <value>123456</value>
-        </poperty>-->
+        </poperty>
     </jdbc>
     <class>
         <name>UserBean</name>

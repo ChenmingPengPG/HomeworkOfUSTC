@@ -1,6 +1,5 @@
 package sc.ustc.utils;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 import sc.ustc.items.DiItems.Bean;
@@ -27,7 +26,8 @@ public class DiXMLHelper {
     private Document document;
 
     public DiXMLHelper() throws ParserConfigurationException, IOException, SAXException {
-        String path = this.getClass().getClassLoader().getResource("").getPath().replaceFirst("/","");
+        String path = this.getClass().getClassLoader()
+                .getResource("").getPath().replaceFirst("/","");
         try{
             path = URLDecoder.decode(path, "UTF-8");
         } catch (UnsupportedEncodingException e) {

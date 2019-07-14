@@ -175,7 +175,7 @@ Done!244.51 s
 f值:  0.761151507420164
 ```
 
-[实验代码](nlp_experiment_two)
+[实验代码](https://github.com/ChenmingPengPG/HomeworkOfUSTC/tree/master/NLP/%E5%AE%9E%E9%AA%8C%E4%BA%8C/nlp_experiment_two)
 
 
 
